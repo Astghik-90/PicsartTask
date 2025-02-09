@@ -1,0 +1,1 @@
+{"uuid":"ac332339-0629-4802-bbf7-02e402d32e6f","name":"com.selenium.ft.BaseTest.setUp","children":["4a74f58a-dcf1-438d-8227-4da67d9e4098"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1739105282931,"stop":1739105288089}],"afters":[],"start":1739105282931,"stop":1739105288089}
