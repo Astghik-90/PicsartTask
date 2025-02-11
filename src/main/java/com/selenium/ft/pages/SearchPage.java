@@ -1,5 +1,6 @@
 package com.selenium.ft.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,7 +27,7 @@ public class SearchPage extends BasePage {
         this.driver = driver;
         this.searchUrl = BASE_URL + "/search";
     }
-
+    @Step("Navigate to Picsart Search")
     public void open() {
         driver.get(searchUrl);
     }
@@ -35,10 +36,12 @@ public class SearchPage extends BasePage {
         switchToIframe(IFRAME_LOCATOR);
     }
 
+    @Step("Check Plus assets count")
     public int plusAssetCount() {
         return getElementCount(PLUS_LOCATOR);
     }
 
+    @Step("Open Filters, if not opened yet")
     public void openFilters() {
         String currentState = getElementState(FILTER_ICON, FILTER_STATE_ATTRIBUTE);
 
@@ -46,7 +49,7 @@ public class SearchPage extends BasePage {
             click(FILTER_ICON);
         }
     }
-
+    @Step("Close Filters, if not closed yet")
     public void closeFilters() {
         String currentState = getElementState(FILTER_ICON, FILTER_STATE_ATTRIBUTE);
 
@@ -59,6 +62,7 @@ public class SearchPage extends BasePage {
         return isElementVisible(SEARCH_FILTER_ROOT);
     }
 
+    @Step("CLick on Filter Icon")
     public void clickFilterIcon() {
         click(FILTER_ICON);
     }

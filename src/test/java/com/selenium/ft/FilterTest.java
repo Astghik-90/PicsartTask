@@ -13,7 +13,7 @@ import static com.selenium.ft.utils.Util.sleep;
 public class FilterTest extends BaseTest {
 
     @Test
-    //@Description("Test to open the search page")
+    @Description("Test to open the search page")
     public void test() {
         SoftAssert softAssert = new SoftAssert();
         //System.out.println("Test started");

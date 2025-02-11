@@ -1,13 +1,12 @@
 package com.selenium.ft.pages;
 
+import com.selenium.ft.setup.ConfigReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static com.selenium.ft.constants.Constants.BASE_URL;
-
 public class EditorPage extends BasePage {
     private WebDriver driver;
-    private static String editorPartialURL = BASE_URL + "create/editor";
+    private static String editorPartialURL = ConfigReader.getBaseURL() + ConfigReader.getEditorPath();
     private final By CANVAS_LOCATOR = By.cssSelector("[data-test=canvas-container]");
 
     public EditorPage(WebDriver driver) {

@@ -1,6 +1,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Parallel Chrome Resolution Test Suite" parallel="tests" thread-count="3">
 
+<!--    <listeners>-->
+<!--        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>-->
+<!--    </listeners>-->
+
     <test name="Chrome_1024x768">
         <parameter name="width" value="1024"/>
         <parameter name="height" value="768"/>

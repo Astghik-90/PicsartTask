@@ -1,69 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-08T20:39:23 AMT" name="Parallel Chrome Resolution Test Suite" finished-at="2025-02-08T20:39:39 AMT" duration-ms="16166">
+  <suite started-at="2025-02-11T13:18:44 AMT" name="Parallel Chrome Resolution Test Suite" finished-at="2025-02-11T13:19:31 AMT" duration-ms="46677">
     <groups>
     </groups>
-    <test started-at="2025-02-08T20:39:23 AMT" name="Chrome_1920x1080" finished-at="2025-02-08T20:39:39 AMT" duration-ms="16041">
+    <test started-at="2025-02-11T13:18:44 AMT" name="Chrome_1440x900" finished-at="2025-02-11T13:19:11 AMT" duration-ms="27376">
       <class name="com.selenium.ft.FilterTest">
-        <test-method is-config="true" signature="setUp(int,int)[pri:0, instance:com.selenium.ft.FilterTest@428640fa]" started-at="2025-02-08T20:39:23 AMT" name="setUp" finished-at="2025-02-08T20:39:28 AMT" duration-ms="4477" status="PASS">
+        <test-method is-config="true" signature="setUp(int,int)[pri:0, instance:com.selenium.ft.FilterTest@248e319b]" started-at="2025-02-11T13:18:44 AMT" name="setUp" finished-at="2025-02-11T13:18:50 AMT" duration-ms="5604" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1920]]>
+                <![CDATA[1440]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[1080]]>
+                <![CDATA[900]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.selenium.ft.FilterTest@428640fa]" started-at="2025-02-08T20:39:28 AMT" name="test" finished-at="2025-02-08T20:39:39 AMT" duration-ms="11041" status="PASS">
+        <test-method signature="test()[pri:0, instance:com.selenium.ft.FilterTest@248e319b]" started-at="2025-02-11T13:18:50 AMT" name="test" finished-at="2025-02-11T13:19:10 AMT" duration-ms="20652" status="FAIL">
+          <exception class="java.lang.ExceptionInInitializerError">
+            <full-stacktrace>
+              <![CDATA[java.lang.ExceptionInInitializerError
+at com.selenium.ft.pages.EditorPage.<clinit>(EditorPage.java:11)
+at com.selenium.ft.pages.SearchPage.clickOnPlusAsset(SearchPage.java:89)
+at com.selenium.ft.FilterTest.test(FilterTest.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.RuntimeException: Failed to load configuration file: src\test\resources\configuration.properties (The system cannot find the path specified)
+at com.selenium.ft.setup.ConfigReader.<clinit>(ConfigReader.java:16)
+... 23 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ExceptionInInitializerError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.ft.FilterTest@428640fa]" started-at="2025-02-08T20:39:39 AMT" name="tearDown" finished-at="2025-02-08T20:39:39 AMT" duration-ms="269" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.ft.FilterTest@248e319b]" started-at="2025-02-11T13:19:11 AMT" name="tearDown" finished-at="2025-02-11T13:19:11 AMT" duration-ms="659" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.selenium.ft.FilterTest -->
-    </test> <!-- Chrome_1920x1080 -->
-    <test started-at="2025-02-08T20:39:23 AMT" name="Chrome_1280x720" finished-at="2025-02-08T20:39:39 AMT" duration-ms="16151">
+    </test> <!-- Chrome_1440x900 -->
+    <test started-at="2025-02-11T13:18:44 AMT" name="Chrome_1366x768" finished-at="2025-02-11T13:19:14 AMT" duration-ms="29852">
       <class name="com.selenium.ft.FilterTest">
-        <test-method is-config="true" signature="setUp(int,int)[pri:0, instance:com.selenium.ft.FilterTest@248e319b]" started-at="2025-02-08T20:39:23 AMT" name="setUp" finished-at="2025-02-08T20:39:28 AMT" duration-ms="4599" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1280]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[720]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.selenium.ft.FilterTest@248e319b]" started-at="2025-02-08T20:39:28 AMT" name="test" finished-at="2025-02-08T20:39:39 AMT" duration-ms="11188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.ft.FilterTest@248e319b]" started-at="2025-02-08T20:39:39 AMT" name="tearDown" finished-at="2025-02-08T20:39:39 AMT" duration-ms="251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.selenium.ft.FilterTest -->
-    </test> <!-- Chrome_1280x720 -->
-    <test started-at="2025-02-08T20:39:23 AMT" name="Chrome_1366x768" finished-at="2025-02-08T20:39:39 AMT" duration-ms="16166">
-      <class name="com.selenium.ft.FilterTest">
-        <test-method is-config="true" signature="setUp(int,int)[pri:0, instance:com.selenium.ft.FilterTest@27406a17]" started-at="2025-02-08T20:39:23 AMT" name="setUp" finished-at="2025-02-08T20:39:27 AMT" duration-ms="4266" status="PASS">
+        <test-method is-config="true" signature="setUp(int,int)[pri:0, instance:com.selenium.ft.FilterTest@793f29ff]" started-at="2025-02-11T13:18:44 AMT" name="setUp" finished-at="2025-02-11T13:18:50 AMT" duration-ms="5853" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,15 +83,121 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:com.selenium.ft.FilterTest@27406a17]" started-at="2025-02-08T20:39:28 AMT" name="test" finished-at="2025-02-08T20:39:39 AMT" duration-ms="11165" status="PASS">
+        <test-method signature="test()[pri:0, instance:com.selenium.ft.FilterTest@793f29ff]" started-at="2025-02-11T13:18:50 AMT" name="test" finished-at="2025-02-11T13:19:13 AMT" duration-ms="23540" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[Could not initialize class com.selenium.ft.pages.EditorPage]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class com.selenium.ft.pages.EditorPage
+at com.selenium.ft.pages.SearchPage.clickOnPlusAsset(SearchPage.java:89)
+at com.selenium.ft.FilterTest.test(FilterTest.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread "TestNG-tests-2"]
+at com.selenium.ft.pages.EditorPage.<clinit>(EditorPage.java:11)
+... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.ft.FilterTest@27406a17]" started-at="2025-02-08T20:39:39 AMT" name="tearDown" finished-at="2025-02-08T20:39:39 AMT" duration-ms="282" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.ft.FilterTest@793f29ff]" started-at="2025-02-11T13:19:13 AMT" name="tearDown" finished-at="2025-02-11T13:19:14 AMT" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.selenium.ft.FilterTest -->
     </test> <!-- Chrome_1366x768 -->
+    <test started-at="2025-02-11T13:18:44 AMT" name="Chrome_1024x768" finished-at="2025-02-11T13:19:31 AMT" duration-ms="46677">
+      <class name="com.selenium.ft.FilterTest">
+        <test-method is-config="true" signature="setUp(int,int)[pri:0, instance:com.selenium.ft.FilterTest@2d710f1a]" started-at="2025-02-11T13:18:44 AMT" name="setUp" finished-at="2025-02-11T13:18:50 AMT" duration-ms="5729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1024]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[768]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test()[pri:0, instance:com.selenium.ft.FilterTest@2d710f1a]" started-at="2025-02-11T13:18:50 AMT" name="test" finished-at="2025-02-11T13:19:30 AMT" duration-ms="40282" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.cssSelector: [data-testid=item-container]>div>div (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.60, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50393}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50393/devtoo..., se:cdpVersion: 133.0.6943.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 86d1d083bc7356947efa8fb401bf2ef1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: [data-testid=item-container]>div>div (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.60, chrome: {chromedriverVersion: 133.0.6943.53 (9a80935019b0..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50393}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50393/devtoo..., se:cdpVersion: 133.0.6943.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 86d1d083bc7356947efa8fb401bf2ef1
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.selenium.ft.pages.BasePage.click(BasePage.java:33)
+at com.selenium.ft.pages.SearchPage.clickOnFirstImage(SearchPage.java:81)
+at com.selenium.ft.FilterTest.test(FilterTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.selenium.ft.FilterTest@2d710f1a]" started-at="2025-02-11T13:19:30 AMT" name="tearDown" finished-at="2025-02-11T13:19:31 AMT" duration-ms="410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.selenium.ft.FilterTest -->
+    </test> <!-- Chrome_1024x768 -->
   </suite> <!-- Parallel Chrome Resolution Test Suite -->
 </testng-results>

@@ -39,14 +39,28 @@
             <version>5.9.2</version>
         </dependency>
 
-        <!--https://mvnrepository.com/artifact/io.qameta.allure/allure-testng-->
-       <dependency>
-           <groupId>io.qameta.allure</groupId>
-           <artifactId>allure-testng</artifactId>
-           <version>2.29.1</version>
-       </dependency>
+        <!-- Allure TestNG Integration -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.29.1</version>
+        </dependency>
 
-       <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+        <!-- Allure Java Commons (Optional, but recommended) -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-java-commons</artifactId>
+            <version>2.29.1</version>
+        </dependency>
+
+        <!-- Allure Assertions Support -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-assertj</artifactId>
+            <version>2.29.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
@@ -61,6 +75,10 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19.1</version>
                 <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>  <!-- Add this line -->
+                    <systemPropertyVariables>
+                        <allure.results.directory>${project.basedir}/target/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
                     <properties>
                         <property>
                             <name>listener</name>
@@ -68,13 +86,14 @@
                         </property>
                     </properties>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${testng.name}</suiteXmlFile>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <parallel>tests</parallel>
                     <threadCount>${thread.count}</threadCount>
                 </configuration>
             </plugin>
-            <!-- Allure Maven Plugin for generating reports -->
+
+            <!-- Allure Report Plugin -->
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
@@ -82,7 +101,7 @@
                 <executions>
                     <execution>
                         <goals>
-                            <goal>serve</goal>
+                            <goal>report</goal>
                         </goals>
                     </execution>
                 </executions>

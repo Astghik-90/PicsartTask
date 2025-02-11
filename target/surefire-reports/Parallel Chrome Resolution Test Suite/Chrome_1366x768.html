@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Chrome_1366x768</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Feb 08 20:39:23 AMT 2025</td>
+<td>Started on:</td><td>Tue Feb 11 13:18:44 AMT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16166 ms)</td>
+<tr><td>Total time:</td><td>29 seconds (29852 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,9 +77,47 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.selenium.ft.FilterTest.test()'><b>test</b><br>Test class: com.selenium.ft.FilterTest</td>
-<td></td>
-<td>11</td>
-<td>com.selenium.ft.FilterTest@27406a17</td></tr>
+<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class com.selenium.ft.pages.EditorPage
+	at com.selenium.ft.pages.SearchPage.clickOnPlusAsset(SearchPage.java:89)
+	at com.selenium.ft.FilterTest.test(FilterTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;TestNG-tests-2&quot;]
+	at com.selenium.ft.pages.EditorPage.&lt;clinit&gt;(EditorPage.java:11)
+	... 22 more
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1481863427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1481863427'><pre>java.lang.NoClassDefFoundError: Could not initialize class com.selenium.ft.pages.EditorPage
+	at com.selenium.ft.pages.SearchPage.clickOnPlusAsset(SearchPage.java:89)
+	at com.selenium.ft.FilterTest.test(FilterTest.java:67)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.ExceptionInInitializerError [in thread &quot;TestNG-tests-2&quot;]
+	at com.selenium.ft.pages.EditorPage.&lt;clinit&gt;(EditorPage.java:11)
+	... 22 more
+</pre></div></td>
+<td>23</td>
+<td>com.selenium.ft.FilterTest@793f29ff</td></tr>
 </table><p>
 </body>
 </html>
